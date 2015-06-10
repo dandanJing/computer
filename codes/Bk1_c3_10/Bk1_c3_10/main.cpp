@@ -13,9 +13,8 @@ int main(){
 	cout<<"M="<<M<<";N="<<N<<endl;
 	//³õÊ¼»¯Á´±í
 	Node* nodeList = (Node *)(malloc(sizeof(struct Node)));
-	Node* temp,current;
-	cout<<nodeList<<endl;
-	//current = nodeList;
+	Node* temp,*current;
+	current = nodeList;
 	for(int i=1;i<=N;i++){
 		temp = (Node *)(malloc(sizeof(struct Node)));
 		if(temp==NULL){
@@ -24,9 +23,42 @@ int main(){
 		}
 		temp->NodeValue = i;
 		temp->Next = NULL;
-		nodeList->Next = temp;
-		nodeList = temp;
+		current->Next = temp;
+		current = temp;
+		//cout<<temp->NodeValue<<endl;
 	}
+	int remain_num = N, count=0;
+	temp = nodeList;
+	current = nodeList->Next;
+	cout<<"clear value:";
+	while(remain_num>1){
+		if(current==NULL){
+			temp = nodeList;
+			current = nodeList->Next;
+		}
+		if(count==M){
+			Node* clearNode = current;
+			temp->Next = current->Next;
+			cout<<clearNode->NodeValue<<",";
+			current = current->Next;
+			free(clearNode);
+			--remain_num;
+			count = 0;
+		}else{
+			++count;
+			temp = current;
+			current = current->Next;
+		}
+	}
+	cout<<endl;
+	cout<<"remain num:"<<nodeList->Next->NodeValue<<endl;
+	
+	int f_remain = 0;
+	for(int i=2;i<=N;i++){
+		f_remain = (f_remain+M+1)%i;
+	}
+	cout<<"remian num:"<<f_remain+1<<endl;
+
 	system("pause");
 	return 0;
 }
