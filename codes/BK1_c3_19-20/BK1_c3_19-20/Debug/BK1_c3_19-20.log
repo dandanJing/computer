@@ -1,0 +1,21 @@
+﻿生成启动时间为 2015/6/12 10:38:03。
+     1>项目“C:\Users\Jing\Desktop\计算机\codes\BK1_c3_19-20\BK1_c3_19-20\BK1_c3_19-20.vcxproj”在节点 2 上(Build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\BK1_c3_19-20.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt main_stack.cpp
+         main_stack.cpp
+     1>c:\users\jing\desktop\计算机\codes\bk1_c3_19-20\bk1_c3_19-20\main_stack.cpp(110): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>c:\users\jing\desktop\计算机\codes\bk1_c3_19-20\bk1_c3_19-20\main_stack.cpp(113): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Jing\Desktop\计算机\codes\BK1_c3_19-20\Debug\BK1_c3_19-20.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Jing\Desktop\计算机\codes\BK1_c3_19-20\Debug\BK1_c3_19-20.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Jing\Desktop\计算机\codes\BK1_c3_19-20\Debug\BK1_c3_19-20.lib" /MACHINE:X86 Debug\main_stack.obj
+         Debug\main_vector.obj
+         BK1_c3_19-20.vcxproj -> C:\Users\Jing\Desktop\计算机\codes\BK1_c3_19-20\Debug\BK1_c3_19-20.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\BK1_c3_19-20.unsuccessfulbuild”。
+         正在对“Debug\BK1_c3_19-20.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“C:\Users\Jing\Desktop\计算机\codes\BK1_c3_19-20\BK1_c3_19-20\BK1_c3_19-20.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.75
